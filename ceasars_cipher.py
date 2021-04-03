@@ -16,6 +16,5 @@ def decode(text, shift_number):
 
 if encode_or_decrypt == "encode":
     print(encode(message, shift_by))
-
 else:
     print(decode(message, shift_by))
