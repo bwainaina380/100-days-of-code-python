@@ -1,5 +1,3 @@
-import math
-
 print("Welcome to the secret auction program.")
 
 auction_data = {}
