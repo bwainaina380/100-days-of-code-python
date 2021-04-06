@@ -17,7 +17,6 @@ def play_game():
            computer_player_score = player_score(computer_player)
        else:
             print_cards(human_player, computer_player)
-            print(get_winner(human_player, computer_player))
             break
 
     winner = get_winner(human_player, computer_player)
