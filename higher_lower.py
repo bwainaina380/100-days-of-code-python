@@ -46,9 +46,11 @@ def show_options(two_celebrities):
     print(f"{first_celebrity['name']} in the {first_celebrity['industry']} industry from {first_celebrity['country']}\nvs\n{second_celebrity['name']} in the {second_celebrity['industry']} industry from {second_celebrity['country']}")
 
 def more_famous_celebrity(two_celebrities):
-    if two_celebrities[0]["followers"] > two_celebrities[1]["followers"]:
+    first_celebrity = two_celebrities[0]
+    second_celebrity = two_celebrities[1]
+    if first_celebrity["followers"] > second_celebrity["followers"]:
         return "A"
-    elif two_celebrities[0]["followers"] < two_celebrities[1]["followers"]:
+    elif first_celebrity["followers"] < second_celebrity["followers"]:
         return "B"
     else:
         return "Equal"
