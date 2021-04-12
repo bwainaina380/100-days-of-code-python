@@ -13,7 +13,7 @@ class Quiz:
     def start_quiz(self):
         self.generate_questions()
         for question in self.questions:
-            answer = input(question.get_question())
+            answer = input(question.get_question()).lower()
             self.score.update_score(question.is_answer_correct(answer))
             if question.is_answer_correct(answer) == False:
                 print("You got the wrong answer")
