@@ -9,6 +9,7 @@ class EtchASketch:
         self.screen.onkey(key="s", fun=self.go_backward)
         self.screen.onkey(key="a", fun=self.go_counter_clockwise)
         self.screen.onkey(key="d", fun=self.go_clockwise)
+        self.screen.onkey(key="c", fun=self.clear_screen)
         self.screen.exitonclick()
 
     def go_forward(self):
@@ -22,3 +23,6 @@ class EtchASketch:
 
     def go_clockwise(self):
         self.turtle.right(20)
+
+    def clear_screen(self):
+        self.screen.reset()
